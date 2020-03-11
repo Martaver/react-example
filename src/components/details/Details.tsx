@@ -1,6 +1,8 @@
 import * as React from "react";
+import { Autocomplete } from '@material-ui/lab';
 
 import "./Details.scss";
+import { TextField } from '@material-ui/core';
 
 export function Details() {
   return (
@@ -10,6 +12,11 @@ export function Details() {
           https://github.com/fuse-box/react-example
         </a>
       </div>
+
+      <Autocomplete options={[]}
+        renderInput={props => (
+          <TextField {...props} />
+        )} />
 
       <div className="try-updating">
         Try changing any of the components, You will get an isntant update
