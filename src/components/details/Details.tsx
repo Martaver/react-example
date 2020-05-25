@@ -4,6 +4,10 @@ import { Autocomplete } from '@material-ui/lab';
 import "./Details.scss";
 import { TextField } from '@material-ui/core';
 
+import * as src from '../../assets/cog.png';
+
+console.log('See the linked resource gets loaded as a url: ', src);
+
 export function Details() {
   return (
     <div className="Details">
@@ -12,6 +16,16 @@ export function Details() {
           https://github.com/fuse-box/react-example
         </a>
       </div>
+
+      <p>
+        The logo top is defined in SASS. Here's an example of a resource linked image:
+      </p>
+
+      <img {...{ src }} width={'50px'} />
+
+      <p>
+        Here's material-ui all linked up:
+      </p>
 
       <Autocomplete options={[]}
         renderInput={props => (
