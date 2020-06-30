@@ -9,8 +9,11 @@ class Context {
       webIndex: {
         template: "src/index.html"
       },
-      cache: true,
+      cache: false,
       devServer: this.runServer,
+      alias: {
+        "react-virtualized": "react-virtualized/dist/umd/react-virtualized.js"
+      },
       /**
        * Congiure the directories for resources imported as modules in code here.
        * e.g. import * as src from '../../assets/logo.svg';

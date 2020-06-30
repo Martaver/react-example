@@ -6,13 +6,14 @@ import Tree from '../Tree';
 export function Application() {
   return (
     <div className="Application">
+      <Tree />
       <div className="top">
         <div className="logo" />
       </div>
       <div className="welcome">FuseBox ❤️ JSX/TSX </div>
 
       <Details />
-      <Tree />
+
     </div>
   );
 }
